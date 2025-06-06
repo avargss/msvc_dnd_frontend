@@ -1,0 +1,19 @@
+.monster-list {
+  h1 {
+    color: #4caf50;
+    font-size: 2rem;
+  }
+ 
+  ul {
+    list-style-type: none;
+    padding: 0;
+ 
+    li {
+      background-color: #f4f4f4;
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
