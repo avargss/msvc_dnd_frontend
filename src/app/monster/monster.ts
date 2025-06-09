@@ -9,4 +9,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './monster.scss'
 })
 export class MonsterComponent {
+  accion(){
+    console.log(`Boton " ver monstruos" `);
+  }
 }
