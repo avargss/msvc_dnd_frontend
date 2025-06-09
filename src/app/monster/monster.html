@@ -2,4 +2,21 @@
     <h1>Monsters</h1>
     <p>Explora el mundo de monstruos</p>
    <button (click)="accion()">Ver monstruos</button> 
+   
+   <table *ngIf="mostrarTabla">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>URL</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let monster of monsters">
+            <td>{{ monster.name }}</td>
+            <td>{{ monster.url }}</td>
+        </tr>
+    </tbody>
+    </table>
 </div>
+
+ 
