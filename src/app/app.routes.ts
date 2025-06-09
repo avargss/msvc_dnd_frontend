@@ -1,3 +1,4 @@
+
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home';
 //import { SpellsComponent } from './spells/spells';
