@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './spells.scss'
 })
 export class SpellsComponent {
-
+  onClick() {
+  console.log('Boton pulsado!');
+}
 }
