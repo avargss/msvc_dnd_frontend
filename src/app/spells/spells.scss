@@ -1,4 +1,10 @@
 .spells-container {
+  background-image:url("./imagen.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: normal;
+  backdrop-filter: none;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,36 +22,20 @@
     font-size: 1.2rem;
     margin-bottom: 2rem;
   }
- 
-  .button-group {
-    display: flex;
-    gap: 1rem;
- 
-    .btn {
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      border: none;
-      border-radius: 8px;
-      color: white;
-      text-decoration: none;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
- 
-      &.btn-monster {
-        background-color: #a83232;
- 
-        &:hover {
-          background-color: #861f1f;
-        }
-      }
- 
-      &.btn-spells {
-        background-color: #324ca8;
- 
-        &:hover {
-          background-color: #1f2d86;
-        }
-      }
-    }
-  }
+
+.button {
+    background-color: #d07aeb;
+    color: white; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px;
+    transition: background-color 0.3s; 
 }
+
+.button:hover {
+    background-color: #9957ad;
+}
+  
+    }
