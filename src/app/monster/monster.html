@@ -1,0 +1,33 @@
+<div class="header">
+  <a class="btn btn-danger back-button" routerLink="/">← Atras</a>
+  <h1>Monsters</h1>
+</div>
+<div class="monster-list">
+    <p>Explora el mundo de monstruos</p>
+   <button (click)="accion()">Ver monstruos</button> 
+   
+   
+   <table *ngIf="mostrarTabla">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Size</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let monster of monsters">
+           
+        <td (click)="mostrarDetalles(monster)" style="cursor: pointer; color: #52e99d;">
+          {{ monster.name }}
+        </td>
+        <td>{{ monster.size }}</td>
+
+        </tr>
+    </tbody>
+    </table>
+</div>
+
+
+
+
+ 
