@@ -22,7 +22,20 @@
     font-size: 1.2rem;
     margin-bottom: 2rem;
   }
+th, td {
+    padding: 10px; /* Add padding to table cells */
+    text-align: left; /* Align text to the left */
+    border-bottom: 1px solid #eee; /* Light border between rows */
+}
 
+th {
+    background-color: #4CAF50; /* Green background for the header */
+    color: white; /* White text for the header */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}
 .button {
     background-color: #d07aeb;
     color: white; 
@@ -31,11 +44,10 @@
     border-radius: 5px; 
     cursor: pointer; 
     font-size: 16px;
-    transition: background-color 0.3s; 
+    transition: background-color 0.3s;
+    
+    &:hover {
+    background-color: #9957ad; 
 }
-
-.button:hover {
-    background-color: #9957ad;
 }
-  
-    }
+}
