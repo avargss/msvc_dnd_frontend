@@ -1,8 +1,13 @@
 <div class="spells-container">
   <h1>Hechizos</h1>
   <p>Ver lista de hechizos</p>
- <button class="button" *ngIf="!mostrarTabla" (click)="accion()">Ver hechizos</button>
 
+  <button class="button" *ngIf="!mostrarTabla" type="button" (click)="accion()">Ver hechizos</button>
+
+
+  <button class="button" *ngIf="spells.length > 0" type="button" (click)="accion()">Generar nuevos hechizos</button>
+
+ 
   <table class="mt-3" *ngIf="spells.length > 0">
     <thead>
       <tr>
@@ -18,8 +23,9 @@
     </tbody>
   </table>
 
-  <p *ngIf="spells.length === 0">No hay hechizos cargados.</p>
+  <p *ngIf="spells.length === 0 && mostrarTabla">No hay hechizos cargados.</p>
 </div>
+
 
  
 

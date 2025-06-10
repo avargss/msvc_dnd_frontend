@@ -12,4 +12,7 @@ private apiURL ='https://www.dnd5eapi.co/api/spells';
   getSpells(): Observable<any>{
     return this.http.get<any>(this.apiURL);
   }
+  getSpellsDetails(index : string) : Observable<any> {
+    return this.http.get<any>(`https://www.dnd5eapi.co/api/spells/${index}`);
+  }
 }
