@@ -1,7 +1,11 @@
+<div class="header">
+  <a class="btn btn-danger back-button" routerLink="/">← Atras</a>
+  <h1>Monsters</h1>
+</div>
 <div class="monster-list">
-    <h1>Monsters</h1>
     <p>Explora el mundo de monstruos</p>
    <button (click)="accion()">Ver monstruos</button> 
+   
    
    <table *ngIf="mostrarTabla">
     <thead>
@@ -12,11 +16,18 @@
     </thead>
     <tbody>
         <tr *ngFor="let monster of monsters">
-            <td>{{ monster.name }}</td>
-            <td>{{ monster.size }}</td>
+           
+        <td (click)="mostrarDetalles(monster)" style="cursor: pointer; color: #52e99d;">
+          {{ monster.name }}
+        </td>
+        <td>{{ monster.size }}</td>
+
         </tr>
     </tbody>
     </table>
 </div>
+
+
+
 
  
