@@ -13,5 +13,10 @@ export class MonsterService {
     getMonster():Observable<any>{
       return this.http.get<any>(this.apiUrl);
     }
+
+    getMonsterDetails(index: string): Observable<any> {
+  return this.http.get<any>(`https://www.dnd5eapi.co/api/monsters/${index}`);
+}
+
    
 }
