@@ -6,15 +6,20 @@
   height: 100vh;
   text-align: center;
   padding: 1rem;
-
+  background-image: url('./imagendos.png'); 
+  background-position: center;
+  background-size: cover; 
+  background-repeat: no-repeat; 
   h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    color: rgb(255, 255, 255);
   }
 
   p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
+    color: rgb(255, 255, 255);
   }
 
   .button-group {
@@ -26,7 +31,7 @@
       font-size: 1rem;
       border: none;
       border-radius: 8px;
-      color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
       text-decoration: none;
       cursor: pointer;
       transition: background-color 0.3s ease;
